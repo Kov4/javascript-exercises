@@ -8,10 +8,8 @@ const subtract = function(a, b) {
 };
 
 const sum = function(tab) {
-  let sum = 0;
-  tab.forEach(function(item){
-    sum = sum + item;
-  });
+  let sum = tab.reduce((total, currentValue) => total + currentValue, 0);
+
   return sum;
 };
 
